@@ -1,0 +1,108 @@
+*{
+	box-sizing: border-box;
+	color: white;
+}
+body {
+	font-family: Impact, Arial, sans-serif;
+	background-color: black;
+}
+h1 {
+ 	color: blue;
+ 	font-size: 40px;
+ 	text-align: center;
+ }
+
+ article {
+ 	color: green;
+ 	font-size: 30px;
+ }
+ h2 {
+ 	color: yellow;
+ 	font: sans-serif;
+ 	font-size: 34px;
+ 	text-align: center;
+ 	background-color: black;
+ }
+ h4{
+ 	font-size: 32px;
+ }
+ .amazing{
+ 	font-weight: bold;
+ 	font-size: 18px;
+ 	background-color: black;
+ 	opacity: .8;
+ 	color: white;
+ }
+ .importance{
+ 	font-weight: bolder;
+ 	font-style: italic;
+ 	font: sans-serif;
+ 	color: black;
+ }
+ ul > li{
+ 	font-style: initial;
+ 	font: sans-serif;
+ 	font-weight: bolder;
+ }
+ div.MARKETING{
+ 	font-weight: bolder;
+ 	font-size: 40px;
+ 	text-align: center;
+ 	color: red;
+ }
+ header li{
+ 	list-style: none;
+ }
+ a:link, a:visited{
+ 	text-decoration: none;
+ 	background-color: yellow;
+ 	border: 1px  solid red;
+ 	color: black;
+ 	display: block;
+ 	width: 300px;
+ 	text-align: center;
+ 	margin-bottom: 1px;
+ }
+a:hover, a:active {
+	background-color: red;
+	border: 1px solid black;
+	color: blue;
+}
+#box{
+	background-color: black;
+	padding: 5px;
+	border: 3px solid yellow;
+	margin: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+#background-sizing1{
+	text-align: center;
+	width: 1200px;
+}
+#p1{
+width: 50%;
+border: 5px solid black;
+float: left;
+background-color: gray;
+padding: 10px;
+}
+#p2{
+width: 50%;
+border: 5px solid black;
+float: left;
+background-color: gray;
+padding: 10px;
+}
+/* big boy devices */
+@media(min-width: 1200px){
+	body{
+		width: 1100px;
+	}
+}
+/*small devices*/
+@media(min-width: 992px) and (max-width: 1199px){
+	body{
+		width: 900px;
+		font-size: 14px;
+	}

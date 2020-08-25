@@ -4,6 +4,14 @@
  <meta charset="utf-8">
  <title>First GitHub Stuff</title>
 <style>
+*{
+	box-sizing: border-box;
+	color: white;
+}
+body {
+	font-family: Impact, Arial, sans-serif;
+	background-color: black;
+}
 h1 {
  	color: blue;
  	font-size: 40px;
@@ -19,6 +27,7 @@ h1 {
  	font: sans-serif;
  	font-size: 34px;
  	text-align: center;
+ 	background-color: black;
  }
  h4{
  	font-size: 32px;
@@ -65,10 +74,44 @@ a:hover, a:active {
 	border: 1px solid black;
 	color: blue;
 }
-.linkswithoutlinkeffect{
-	font-weight: bolder;
-	font: sans-serif;
-	font-style: initial;
+#box{
+	background-color: black;
+	padding: 5px;
+	border: 3px solid yellow;
+	margin: 20px;
+	width: 250px;
+	box-sizing: border-box;
+}
+#background-sizing1{
+	text-align: center;
+	width: 1200px;
+}
+#p1{
+width: 50%;
+border: 5px solid black;
+float: left;
+background-color: gray;
+padding: 10px;
+}
+#p2{
+width: 50%;
+border: 5px solid black;
+float: left;
+background-color: gray;
+padding: 10px;
+}
+/* big boy devices */
+@media(min-width: 1200px){
+	body{
+		width: 1100px;
+	}
+}
+/*small devices*/
+@media(min-width: 992px) and (max-width: 1199px){
+	body{
+		width: 900px;
+		font-size: 14px;
+	}
 }
 </style>
 </head>
@@ -85,7 +128,7 @@ a:hover, a:active {
 </header>
 <h1>Le beggining</h1>
 <section>
-<h2>First time using section tags!!!!!</h2>
+<h2 id="box">First time using section tags!!!!!</h2>
 <article>
 <h4>Stuff</h4>
 Well this is my first attempt at doing this stuff on GitHub and Sublime Text.
@@ -106,8 +149,8 @@ But i am rlly likin it!
 				<li>Power Supplies</li>
 				<li>CPUs from 3rd Parties
 					<ul>
-						<li class="linkswithoutlinkeffect"><a href="https://amd.com/en" target="_blank" title="AMD's website">AMD</a></li>
-						<li class="linkswithoutlinkeffect"><a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank" title="Intel's website">Intel</a></li>
+						<li><a href="https://amd.com/en" target="_blank" title="AMD's website">AMD</a></li>
+						<li><a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank" title="Intel's website">Intel</a></li>
 					</ul>
 				<li>RAM</li>
 				<li>Storage</li>
@@ -117,7 +160,7 @@ But i am rlly likin it!
 	</ul>
 </div>
 <div class="MARKETING">JUST BUY FROM US!!! PLS!!</div>
-<h2>Here is where you can check you Youtube because were too lazy to put another link.</h2>
+<h2 id="background-sizing1">Here is where you can check you Youtube because were too lazy to put another link.</h2>
 <section>
 	<p>
 		<img src="https://cdn.mos.cms.futurecdn.net/SytNGv3ZxAVCkvcspmbbvh.jpg"
@@ -129,6 +172,8 @@ But i am rlly likin it!
 </section>
 <p class="amazing">	This is the thing htat is the most amazing thing of the amazing things in the amazing world. it is ................ the amount of times i used the word amazing in this sentence. Also, DORA DORA DORA THE EXPLORER!!!!!! Ikr its super obnoxious.
 </p>
+<p id="p1"> Eloo mates another paragraph is here tot ake up some space cause ya knowwww were bored so yea</p>
+<p id="p2"> But now it be  dos colums thats right there just to take up more space in your browser oh yea</p>
 <footer> Vansh &amp; Co. Inc. &copy; Copyright 2020</footer>
 </body>
 </html>
